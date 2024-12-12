@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  position: relative;
+  color: #fff;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea {
+  border: none;
+  outline: none;
+}
+
+body {
+  background: hsl(226, 43%, 10%);
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.todo-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  background-color: hsl(235, 45%, 61%);
+  padding: 24px;
+  z-index: 99;
+}
+.todo-profile-img {
+  width: 75px;
+  height: 75px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.todo-profile-img > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.todo-profile-user {
+  margin-top: 46px;
+  margin-bottom: 56px;
+}
+.todo-profile-user > h2 {
+  font-weight: 300;
+  font-size: 18px;
+  color: hsl(236, 100%, 87%);
+  line-height: 150%;
+}
+.todo-profile-user > h1 {
+  font-weight: 300;
+  color: #fff;
+}
+.todo-nav {
+  background: hsl(235, 46%, 20%);
+  padding-top: 46px;
+  padding-bottom: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  -webkit-transform: translateY(-24px);
+      -ms-transform: translateY(-24px);
+          transform: translateY(-24px);
+  border-radius: 20px;
+}
+
+.nav-btn {
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.nav-btn:hover {
+  color: #fff;
+}
+
+.container-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-body {
+  width: 280px;
+  max-width: 280px;
+  height: 280px;
+  border-radius: 20px;
+  margin: 12px;
+  background: hsl(145, 58%, 55%);
+  overflow: hidden;
+}
+.card-icon {
+  position: absolute;
+  right: 12px;
+  top: 0;
+}
+.card-info {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  bottom: -1px;
+  width: 100%;
+  height: 240px;
+  border-radius: 20px;
+  background: hsl(235, 46%, 20%);
+  padding: 24px;
+}
+.card-info-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.card-info-title h3, .card-info-title p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+.card-info-content > p {
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.card-info-content > p > span {
+  font-size: 16px;
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+}
+
+@media (max-width: 48em) {
+  .todo-body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .todo-profile-user {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .card-body {
+    width: 100%;
+    max-width: 100%;
+    height: 240px;
+  }
+  .card-info {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 200px;
+  }
+  .card-info-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .card-info-title h3, .card-info-title p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+  }
+  .card-info-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
