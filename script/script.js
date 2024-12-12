@@ -73,4 +73,8 @@ const loadData = (filter) => {
   });
 }
 
+
+document.addEventListener('DOMContentLoaded', => {
+    
+})
 loadData()
