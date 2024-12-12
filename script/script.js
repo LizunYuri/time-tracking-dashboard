@@ -141,6 +141,8 @@ navBtn.forEach(button => {
 
 const loadData = (filter) => {
 
+
+
 if(!filter){
     userData.forEach(element => {
         containerBody.innerHTML += `
