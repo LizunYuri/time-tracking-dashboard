@@ -22,7 +22,7 @@ navBtn.forEach(button => {
 })
 
 const loadData = (filter) => {
-  fetch('/data.json').then((response) => {  
+  fetch('https://github.com/LizunYuri/time-tracking-dashboard/blob/main/data.json').then((response) => {  
     if(!response.ok) return console.log('Oops! Something went wrong.');
     
     return response.json();
