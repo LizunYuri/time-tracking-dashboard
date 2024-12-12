@@ -74,7 +74,6 @@ const loadData = (filter) => {
 }
 
 
-document.addEventListener('DOMContentLoaded', => {
-    
+document.addEventListener('DOMContentLoaded', () => {
+    loadData()
 })
-loadData()
